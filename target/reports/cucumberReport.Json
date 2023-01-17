@@ -1,0 +1,99 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: pt"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Visualizar codigo de desconto",
+        "description": "",
+        "id": "receber-o-cupom-de--desconto-da-qazando;visualizar-codigo-de-desconto",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2086235900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que estou no site da qazando",
+            "match": {
+              "location": "DescontosStep.acessar_site_qazando()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 2150038000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "eu preencho meu e-mail",
+            "match": {
+              "location": "DescontosStep.eu_preencho_meu_e_mail()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 65688400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "clico em ganhar cupom",
+            "match": {
+              "location": "DescontosStep.clico_em_ganhar_cupom()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 28122100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "eu vejo o codigo de desconto.",
+            "match": {
+              "location": "DescontosStep.eu_vejo_o_codigo_de_desconto()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Cupom gerado Errado",
+        "description": "",
+        "id": "receber-o-cupom-de--desconto-da-qazando;cupom-gerado-errado",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2717954000,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[teste]\u003e but was:\u003c[QAZANDO15OFF]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat pages.HomePage.verificarCupomDesconto(HomePage.java:35)\r\n\tat steps.DescontosStep.geraCupomErro(DescontosStep.java:42)\r\n\tat ✽.Dado que eu tenho um cupom gerado Errado(desconto.feature:15)\r\n",
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "que eu tenho um cupom gerado Errado",
+            "match": {
+              "location": "DescontosStep.geraCupomErro()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      }
+    ],
+    "name": "Receber o cupom de  desconto da qazando",
+    "description": "Eu como usuario da qazando\r\nquero receber um cupom de desconto\r\npara comprar um curso com valor reduzido.",
+    "id": "receber-o-cupom-de--desconto-da-qazando",
+    "keyword": "Funcionalidade",
+    "uri": "desconto.feature"
+  }
+]

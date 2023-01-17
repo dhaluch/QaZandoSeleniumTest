@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: runner.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 11.177 s <<< FAILURE! - in runner.RunCucumberTest
+Cenario: Cupom gerado Errado.Dado que eu tenho um cupom gerado Errado  Time elapsed: 0.007 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[teste]> but was:<[QAZANDO15OFF]>
+
+Cenario: Cupom gerado Errado  Time elapsed: 0.007 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[teste]> but was:<[QAZANDO15OFF]>
+
